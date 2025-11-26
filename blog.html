@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog
+description: Thoughts on data engineering, tech, and career
+permalink: /blog/
+---
+
+<a href="{{ '/' | relative_url }}" class="back-link">&larr; Back</a>
+
+<header>
+    <h1>Blog</h1>
+</header>
+
+<section class="posts">
+    {% for post in site.posts %}
+    <article class="post-preview">
+        <a href="{{ post.url | relative_url }}">
+            <h2>{{ post.title }}</h2>
+            <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+            {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+            {% endif %}
+        </a>
+    </article>
+    {% endfor %}
+
+    {% if site.posts.size == 0 %}
+    <p class="empty-state">No posts yet. Check back soon.</p>
+    {% endif %}
+</section>

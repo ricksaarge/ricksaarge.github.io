@@ -1,0 +1,67 @@
+---
+layout: default
+title: ""
+description: Data Platform Consultant & Engineering Leader
+---
+
+<header>
+    <h1>{{ site.author.name }}</h1>
+    <p class="tagline">{{ site.description }}</p>
+</header>
+
+<section class="intro">
+    <p>
+        I help companies solve their toughest data infrastructure problems.
+        10+ years building and scaling data platforms at Booking.com, Swiss Re, and others.
+        Now running <a href="https://gemin.us" target="_blank" rel="noopener">Geminus</a>, a data platform consulting practice.
+    </p>
+</section>
+
+<section class="links">
+    <h2>{% include icons.html name="link" %} Links</h2>
+    <ul>
+        <li><a href="{{ '/resume/' | relative_url }}">{% include icons.html name="document" %} Resume</a></li>
+        <li><a href="{{ '/ricardo-gemignani-resume.pdf' | relative_url }}" download>{% include icons.html name="download" %} PDF</a></li>
+        <li><a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">{% include icons.html name="github" %} GitHub</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">{% include icons.html name="pen" %} Blog</a></li>
+        <li><a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">{% include icons.html name="linkedin" %} LinkedIn</a></li>
+    </ul>
+</section>
+
+<section class="writing">
+    <h2>{% include icons.html name="pen" %} Writing</h2>
+    <ul>
+        <li>
+            <a href="https://medium.com/@{{ site.social.medium }}/from-mandrake-to-microsoft-a-journey-of-os-love-00cf193cc5ca" target="_blank" rel="noopener">From Mandrake to Microsoft: A Journey of OS Love</a>
+            <span class="desc">A personal history through operating systems</span>
+        </li>
+    </ul>
+</section>
+
+<section class="projects">
+    <h2>{% include icons.html name="folder" %} Projects</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/{{ site.social.github }}/Windows-Setup" target="_blank" rel="noopener">Windows-Setup</a>
+            <span class="desc">PowerShell scripts to customize Windows the way I like it</span>
+        </li>
+        <li>
+            <a href="https://github.com/{{ site.social.github }}/aisd" target="_blank" rel="noopener">aisd</a>
+            <span class="desc">Documentation format optimized for AI consumption</span>
+        </li>
+        <li>
+            <a href="https://github.com/{{ site.social.github }}/dotfiles" target="_blank" rel="noopener">dotfiles</a>
+            <span class="desc">macOS dotfiles with GNU Stow and 1Password integration</span>
+        </li>
+        <li>
+            <a href="https://github.com/{{ site.social.github }}/fortunes" target="_blank" rel="noopener">fortunes</a>
+            <span class="desc">Quotes and insights worth remembering</span>
+        </li>
+    </ul>
+</section>
+
+<section class="contact">
+    <p>
+        {% include icons.html name="mail" size=16 %} <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> · {% include icons.html name="location" size=16 %} {{ site.author.location }}
+    </p>
+</section>
